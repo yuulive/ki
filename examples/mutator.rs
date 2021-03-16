@@ -2,7 +2,7 @@
 
 use nalgebra::DVector;
 
-use rbf_interp::{Basis, Scatter};
+use ki::{Basis, Scatter};
 
 const SAMPLES: &[([usize; 2], [u8; 3])] = &[
     ([11, 0], [128, 128, 128]),

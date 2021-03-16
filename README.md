@@ -1,4 +1,4 @@
-# rbf-interp
+# ki
 
 This crate contains an implementation of Radial Basis Function multidimensional interpolation.
 For an excellent introduction to the topic, see the [SIGGRAPH 2014 course notes].
@@ -26,18 +26,18 @@ and higher order polynomials also make sense, but are not implemented currently.
 The plots below are made with a Gaussian basis function with a deliberately too-small size
 parameter (0.05), to show more clearly the effect of the polynomial term:
 
-![Gaussian order 0](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/gaussian_pure.svg?sanitize=true)
-![Gaussian order 1](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/gaussian_constant.svg?sanitize=true)
-![Gaussian order 2](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/gaussian_affine.svg?sanitize=true)
+![Gaussian order 0](https://raw.githubusercontent.com/yuulive/ki/master/docs/gaussian_pure.svg?sanitize=true)
+![Gaussian order 1](https://raw.githubusercontent.com/yuulive/ki/master/docs/gaussian_constant.svg?sanitize=true)
+![Gaussian order 2](https://raw.githubusercontent.com/yuulive/ki/master/docs/gaussian_affine.svg?sanitize=true)
 
 With a reasonable value (1.0), results are spot-on:
 
-![Gaussian with properly tuned width](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/gaussian1.svg?sanitize=true)
+![Gaussian with properly tuned width](https://raw.githubusercontent.com/yuulive/ki/master/docs/gaussian1.svg?sanitize=true)
 
 Here are comparisons with two of the other basis functions, thin plate and triharmonic:
 
-![Thin plate](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/thinplate.svg?sanitize=true)
-![Triharmonic](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/triharmonic.svg?sanitize=true)
+![Thin plate](https://raw.githubusercontent.com/yuulive/ki/master/docs/thinplate.svg?sanitize=true)
+![Triharmonic](https://raw.githubusercontent.com/yuulive/ki/master/docs/triharmonic.svg?sanitize=true)
 
 Note that the interpolation is pretty good, but the extrapolation (the region from 1.8 to 2.0
 in these plots) is weaker.
@@ -55,9 +55,9 @@ an interpolation scheme.
 Below are the image from MutatorMath (scaled down), and radial basis results using Gaussian
 bumps with radius 4.5 and thin plate splines
 
-![MutatorMath](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/mutatorMath_colorField_small.png)
-![Gaussian radius 4.5](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/m_gaussian4_5.png)
-![Thin plate spline](https://raw.githubusercontent.com/linebender/rbf-interp/master/docs/m_thinplate.png)
+![MutatorMath](https://raw.githubusercontent.com/yuulive/ki/master/docs/mutatorMath_colorField_small.png)
+![Gaussian radius 4.5](https://raw.githubusercontent.com/yuulive/ki/master/docs/m_gaussian4_5.png)
+![Thin plate spline](https://raw.githubusercontent.com/yuulive/ki/master/docs/m_thinplate.png)
 
 The radius tuning parameter has a fairly profound effect on the results. This is a liability
 in many application domains for multidimensional interpolation, but perhaps a good thing

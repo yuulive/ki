@@ -2,7 +2,7 @@
 
 use nalgebra::DVector;
 
-use rbf_interp::{Basis, Scatter};
+use ki::{Basis, Scatter};
 
 fn main() {
     let mut xs = Vec::with_capacity(10);
